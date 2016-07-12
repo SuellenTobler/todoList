@@ -1,0 +1,62 @@
+$font: "Helvetica Neue", sans-serif;
+$font-color: #000;
+
+#testTodoListApp{
+	margin-top: 20px;
+
+	.header{ 
+
+		h1{
+			font-family: $font; color:$font-color; font-size: 42px; line-height: 42px; margin: 0; padding: 0; text-align: center;
+
+			span{
+				background: #e3ff00; padding: 10px; display: inline-block;
+			}
+		} 
+	}
+
+	#todoListApp{
+
+		>div{
+			max-width:620px; width: 100%; margin: 20px auto;
+		}
+
+		input{
+			-webkit-border-radius: 4px; 
+			-moz-border-radius: 4px; 
+			border-radius: 4px; 					
+		}
+
+		.destroy{
+		    background: transparent; border: none; color: #a10;
+
+		    &:hover{ color: red; }
+		}
+
+		ul{ 
+
+			li{
+
+				label{
+					font-family: $font; color:$font-color; font-size: 20px; line-height: 20px; 
+				}
+				
+				&.completed{ 
+					label{
+						text-decoration: line-through; color: #545454; font-style: italic; 
+					}
+				}
+
+			}
+		}
+
+		.list{
+			padding: 0; 
+		}
+		.done{
+			background: #f6f6f6; padding: 0; 
+		}
+
+	}	
+
+}
